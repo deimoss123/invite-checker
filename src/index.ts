@@ -31,6 +31,8 @@ async function checkInv(code: string) {
   }
 }
 
+sendWebhook('test');
+
 setInterval(async () => {
   for (const [key, val] of invsToCheck) {
     console.log(`(${key}) Checking inv code: "${val}"`);
